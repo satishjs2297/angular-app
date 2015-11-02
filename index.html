@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>AngularJS Routing example</title>
+
+    <link href="libs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular/angular-route.js"></script>
+
+    
+    <script src="scripts/angular/app.js"></script>
+	<script src="scripts/angular/controller/AddOrderController.js"></script>
+	<script src="scripts/angular/controller/ShowOrdersController.js"></script>
+	<script src="scripts/angular/routes/routes.js"></script>
+	<script src="scripts/angular/directives/CommonDirectives.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app="sampleApp">
+
+    <div class="container">
+    	<header-directive></header-directive>
+    	<ng-view></ng-view>
+	
+</div><!-- /.container -->
+  </body>
+</html>
